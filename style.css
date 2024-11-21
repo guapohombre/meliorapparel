@@ -71,6 +71,8 @@
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
+  min-height: 100vh;
+  width: 100%;
 
   color: rgb(0 0 0/0.8);
 }
@@ -94,11 +96,13 @@ main {
 .section-title {
   font-size: 3rem;
   margin-bottom: 3rem;
+  text-align: center;
 }
 
 .founding-team-section-title {
   font-size: 3rem;
   margin-bottom: 6rem;
+  text-align: center;
 }
 
 .light-text {
@@ -124,7 +128,7 @@ main {
 
 .top-title-top,
 .top-title-bottom {
-  font-size: 6rem;
+  font-size: 4rem;
   position: sticky;
   top: 5rem;
   width: 100%;
@@ -231,8 +235,9 @@ main {
 .cta {
   background-color: var(--clr-secondary);
   color: #ffffffbb;
-  font-size: 3rem;
-  padding: 2rem 6rem;
+  font-size: 1.4rem;
+  /* padding: 2rem 6rem; */
+  padding: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -329,6 +334,22 @@ header .logo {
   height: 100%;
 
   border: 2px solid var(--clr-accent-dark);
+}
+
+.founder-box {
+  width: 100%;
+
+  position: relative;
+  padding: 6rem 1rem 3rem 1rem;
+
+  opacity: 0;
+  margin-bottom: 5rem;
+  height: 100%;
+
+  border: 2px solid var(--clr-accent-dark);
+
+  border-radius: 8px;
+  background-color: transparent;
 }
 
 .box-current {
@@ -465,16 +486,6 @@ li {
   margin-bottom: 4rem;
 }
 
-.founder-box {
-  position: relative;
-
-  border: 2px solid var(--clr-tertiary);
-
-  border-width: 2px;
-  padding-top: 6rem;
-  margin-bottom: 5rem;
-}
-
 .founder-box-header {
   font-weight: 400;
   font-size: 2rem;
@@ -529,6 +540,7 @@ li {
 
 .founding-team-section {
   padding: 2rem 6rem 4rem 6rem;
+  padding: 2rem 2rem 4rem 2rem;
 
   text-align: left;
 }
@@ -557,9 +569,18 @@ li {
     margin-bottom: 2rem;
     margin-right: 2rem;
   }
+
+  .section-title,
+  .founder-section-heading {
+    text-align: left;
+  }
 }
 
 @media (min-width: 1470px) {
+  .top-title-top,
+  .top-title-bottom {
+    font-size: 5rem;
+  }
   .hero-content-title {
     font-size: 3rem;
   }
@@ -580,6 +601,12 @@ li {
   }
   .cta-box {
     text-align: left;
+  }
+  .founding-team-section {
+    padding: 2rem 6rem 4rem 6rem;
+  }
+  .cta {
+    font-size: 3rem;
   }
 }
 
@@ -605,6 +632,7 @@ li {
   .founder-box,
   .cta {
     padding-inline: 4rem;
+    padding: 2rem 6rem;
   }
 
   .founder-box-container {

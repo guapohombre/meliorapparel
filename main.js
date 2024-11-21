@@ -1,4 +1,4 @@
-const sections = document.querySelectorAll(".box");
+const sections = document.querySelectorAll(".box,.founder-box");
 const throwaway = document.querySelector(".hero-throwaway-container");
 
 const throwawayObserver = new IntersectionObserver(
