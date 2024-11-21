@@ -626,10 +626,10 @@ li {
   }
 
   .founder-box {
-    min-height: 850px;
+    min-height: 950px;
+    padding: 6rem;
   }
 
-  .founder-box,
   .cta {
     padding-inline: 4rem;
     padding: 2rem 6rem;
