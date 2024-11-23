@@ -37,7 +37,7 @@
 
 :root {
   --clr-primary: #c8a89c;
-  --clr-secondary: rgb(114, 88, 78);
+  --clr-secondary: #72584e;
   --clr-tertiary: #9c8c85;
   --clr-accent-dark: #331b12;
   --clr-accent-light: #331b12;
@@ -90,7 +90,8 @@ section {
 }
 
 main {
-  padding-top: 4.5rem;
+  margin-top: 110px;
+  /* background-color: red; */
 }
 
 .section-title {
@@ -124,6 +125,7 @@ main {
   text-align: center;
 
   position: relative;
+  margin-top: 20px;
 }
 
 .top-title-top,
@@ -250,9 +252,10 @@ main {
   padding: 2rem;
   border-radius: 8px;
   display: flex;
-  align-items: center;
+  align-items: start;
   justify-content: center;
   text-align: center;
+  flex-direction: column;
 }
 
 .in-view {
@@ -270,30 +273,70 @@ main {
 
 header {
   background-color: var(--clr-primary);
-  height: 5rem;
+  height: 100px;
   position: fixed;
   top: 0px;
   left: 0px;
   right: 0px;
   margin-inline: auto;
-  color: white;
-  padding: 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 100;
-  border-bottom: 2px solid var(--clr-secondary);
 
+  /* padding: 2rem; */
+  /* display: flex;
+
+  justify-content: space-between;
+  align-items: center; */
+  z-index: 100;
+  /* border-bottom: 2px solid var(--clr-secondary); */
+  overflow: visible;
   font-size: 1.5rem;
 }
-
-header .logo {
-  margin-inline: auto;
+header:after {
+  content: "";
+  position: absolute;
+  top: -40px;
+  left: 20px;
+  display: block;
+  margin: 0 auto;
+  background: var(--clr-primary);
+  width: 200px;
+  height: 200px;
+  z-index: 50;
+  border-radius: 0 0 50% 50%;
+  /* border-bottom: 2px solid var(--clr-secondary); */
+  /* transform: translateX(-50%); */
 }
 
 .logo {
-  width: 200px;
+  /* border: 3px solid black; */
+  width: 150px;
+  height: 150px;
+  display: grid;
+  place-content: center;
+  margin-inline: auto;
+
+  z-index: 300;
+  position: absolute;
+  left: 45px;
+
+  background-color: transparent;
+
+  /* border-radius: 40%;
+  margin-inline: auto;
+  background-color: var(--clr-primary);
+  border-bottom: 2px solid var(--clr-secondary);
+  padding-top: 3rem; */
 }
+
+/* header .logo {
+  margin-inline: auto;
+} */
+
+/* .logo {
+  margin-inline: auto;
+  width: 300px;
+  height: 300px;
+  background-color: #e2764f;
+} */
 
 /* boxes */
 
@@ -572,6 +615,10 @@ li {
 
   .section-title,
   .founder-section-heading {
+    text-align: left;
+  }
+
+  .founding-team-section-title {
     text-align: left;
   }
 }
