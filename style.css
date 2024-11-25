@@ -86,25 +86,31 @@ img {
 section {
   /* min-height: 870px; */
   /* min-height: 550px; */
-  margin-block: 20px;
+  /* margin-block: 20px; */
+  /* margin-block: 5px; */
   margin-inline: auto;
-  box-shadow: 5px 5px 15px rgb(0 0 0/0.2), -5px -5px 10px rgb(0 0 0/0.2);
-  scroll-margin-top: 78px;
+  /* box-shadow: 5px 5px 15px rgb(0 0 0/0.2), -5px -5px 10px rgb(0 0 0/0.2); */
+  scroll-margin-top: 79px;
+  min-height: 250px;
+  padding-block: 2rem;
 }
 
 main {
-  margin-top: 85px;
+  margin-top: 80px;
   /* background-color: red; */
 }
 
 .section-title {
   font-size: 3rem;
+  font-size: 2rem;
   margin-bottom: 3rem;
+  margin-bottom: 2rem;
   text-align: center;
 }
 
 .founding-team-section-title {
   font-size: 3rem;
+  font-size: 2rem;
   margin-bottom: 6rem;
   text-align: center;
 }
@@ -114,7 +120,7 @@ main {
 }
 
 .top {
-  min-height: 250px;
+  /* min-height: 250px; */
   background-color: var(--clr-primary);
   background-image: url("./images/marks.jpg");
   background-size: cover;
@@ -122,7 +128,6 @@ main {
   height: auto;
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  background-color: top;
 
   display: flex;
   gap: 2rem;
@@ -139,6 +144,7 @@ main {
 .top-title-top,
 .top-title-bottom {
   font-size: 4rem;
+  font-size: 2.5rem;
   position: sticky;
   top: 5rem;
   width: 100%;
@@ -174,13 +180,15 @@ main {
   background-color: #331b12;
 }
 
-.top-title {
+/* .top-title {
   font-size: 6rem;
+  font-size: 4rem;
 
   color: rgba(51, 27, 18, 0.2);
+  background-color: red;
 
   justify-self: start;
-}
+} */
 
 /* HERO */
 
@@ -200,22 +208,25 @@ main {
 }
 
 .hero-content-text {
-  font-size: 2.5rem;
-
+  font-size: 1.5rem;
   margin-bottom: 4rem;
+  margin-bottom: 1rem;
 }
 
 .hero-content-title-box {
   margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 
 .hero-content-title {
   font-size: 5rem;
   font-size: 3rem;
+  font-size: 2rem;
   letter-spacing: 1px;
   line-height: 1.3;
 
   margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .hero-throwaway-container {
@@ -225,6 +236,8 @@ main {
 
   width: 500px;
   height: 500px;
+  width: 250px;
+  height: 250px;
   flex-grow: 1;
   flex-shrink: 0;
 
@@ -233,8 +246,9 @@ main {
 
   display: flex;
   justify-content: center;
+  margin-bottom: 1.5rem;
 
-  opacity: 0;
+  /* opacity: 0; */
   background-color: var(--clr-primary);
   border-radius: 50%;
   overflow: hidden;
@@ -253,7 +267,7 @@ main {
   color: #ffffffbb;
   font-size: 1.4rem;
   /* padding: 2rem 6rem; */
-  padding: 2rem;
+  padding: 2rem 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -291,8 +305,6 @@ header {
     to top,
     var(--clr-primary),
     var(--clr-secondary)
- 
-   
   );
 
   height: 80px;
@@ -300,7 +312,7 @@ header {
   top: 0px;
   left: 0px;
   right: 0px;
-  margin-inline: auto;
+  /* margin-inline: auto; */
   display: flex;
   align-items: center;
 
@@ -311,8 +323,9 @@ header {
   align-items: center; */
   z-index: 100;
   /* border-bottom: 2px solid var(--clr-secondary); */
-  overflow: visible;
+  /* overflow: visible; */
   font-size: 1.5rem;
+  border-bottom: 1px solid var(--clr-secondary);
 }
 /* header:after {
   content: "";
@@ -363,7 +376,6 @@ header {
   display: none;
 } */
 
-
 .header-link:link {
   color: #331b12;
 }
@@ -374,8 +386,6 @@ header {
 .header-link:focus {
   color: white;
 }
-
-
 
 .header-link:hover {
   color: white;
@@ -392,13 +402,13 @@ header {
   padding: 0;
   z-index: 300;
   position: absolute;
-  left: 0;
-  top: 0;
+  left: 8px;
+  top: 8px;
 
   background-color: var(--clr-primary);
   cursor: pointer;
   border-radius: 50%;
- 
+
   /* background-image: linear-gradient(
     to right,
     var(--clr-tertiary),
@@ -475,7 +485,7 @@ header {
   margin-bottom: 5rem;
   height: 100%;
 
-  border: 2px solid var(--clr-accent-dark);
+  border: 2px solid var(--clr-tertiary);
 
   border-radius: 8px;
   background-color: transparent;
@@ -488,10 +498,12 @@ header {
 .box-header {
   margin-bottom: 1rem;
   font-size: 2.2rem;
+  font-size: 1.5rem;
 }
 
 .box-body {
   font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 li {
@@ -509,7 +521,7 @@ li {
 
 .box-section {
   padding: 2rem 4rem 4rem 4rem;
-  padding: 2rem 0.5rem 2rem 0.5rem;
+  padding: 2rem 1rem 2rem 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -533,6 +545,7 @@ li {
   padding: 2rem 6rem 4rem 6rem;
   padding: 2rem 1rem 2rem 1rem;
   position: relative;
+  border-bottom: 1px solid var(--clr-secondary);
 }
 
 .cofounder-section {
@@ -542,6 +555,7 @@ li {
 
   flex-direction: column;
   position: relative;
+  border-bottom: 1px solid var(--clr-secondary);
 }
 
 .founder-container {
@@ -555,7 +569,7 @@ li {
 }
 
 .founder-title {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 2rem;
 }
@@ -578,12 +592,22 @@ li {
 }
 
 .cofounder-img-container {
-  border-radius: 50%;
+  /* border-radius: 50%; */
   overflow: hidden;
-  width: 200px;
-
+  width: 250px;
+  height: 250px;
+  margin-bottom: 2rem;
   margin-inline: auto;
   box-shadow: 10px 10px 15px rgb(0 0 0/0.2);
+  object-fit: cover;
+}
+
+.ben-img {
+  width: 100%;
+  height: 100%;
+  object-position: 50% 50%;
+  object-fit: cover;
+  /* border: 4px solid red; */
 }
 
 .founder-section-heading {
@@ -598,13 +622,16 @@ li {
 
 .founder-body {
   margin-bottom: 2rem;
-
+  margin-bottom: 1rem;
   font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 .cofounder-body {
   margin-bottom: 2rem;
+  margin-bottom: 1rem;
   font-size: 1.5rem;
+  font-size: 1rem;
   justify-self: flex-start;
 }
 
@@ -621,6 +648,7 @@ li {
 .founder-box-header {
   font-weight: 400;
   font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 1.5rem;
 }
@@ -628,6 +656,7 @@ li {
 .founder-box-body {
   margin-bottom: 2rem;
   font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 .founder-box-image-container {
@@ -647,7 +676,7 @@ li {
   gap: 1rem;
   position: absolute;
   bottom: 2rem;
-  right: 6rem;
+  right: 2rem;
 }
 
 .founding-team-box-links {
@@ -672,7 +701,7 @@ li {
 
 .founding-team-section {
   padding: 2rem 6rem 4rem 6rem;
-  padding: 2rem 2rem 4rem 2rem;
+  padding: 1rem;
 
   text-align: left;
 }
@@ -689,6 +718,7 @@ li {
   align-items: center;
 
   margin-inline: auto;
+  font-size: 0.8rem;
 }
 
 @media (min-width: 470px) {
@@ -733,7 +763,8 @@ li {
     color: #331b12;
   }
   section {
-    scroll-margin-top: 100px;
+    scroll-margin-top: 150px;
+    min-height: 500px;
   }
 }
 
@@ -759,8 +790,8 @@ li {
     z-index: 50;
     border-radius: 0 0 50% 50%;
     /* border-bottom: 2px solid var(--clr-secondary); */
-    /* transform: translateX(-50%); */
-  } */
+  /* transform: translateX(-50%); */
+  /* } */
 }
 
 @media (min-width: 1100px) {
