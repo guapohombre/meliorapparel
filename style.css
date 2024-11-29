@@ -157,7 +157,7 @@ main {
 
 .top-title-top {
   animation: fadein-title;
-  animation-delay: 1.5s;
+  animation-delay: 0;
   animation-duration: 1s;
   animation-fill-mode: forwards;
   text-align: left;
@@ -168,7 +168,7 @@ main {
 }
 .top-title-bottom {
   animation: fadein-title;
-  animation-delay: 3s;
+  animation-delay: 0.75s;
   animation-duration: 1s;
   animation-fill-mode: forwards;
   text-align: right;
@@ -195,23 +195,20 @@ main {
 
 .hero-content-text {
   font-size: 1.5rem;
-  margin-bottom: 4rem;
+
   margin-bottom: 1rem;
 }
 
 .hero-content-title-box {
-  margin-bottom: 4rem;
   margin-bottom: 2rem;
 }
 
 .hero-content-title {
-  font-size: 5rem;
-  font-size: 3rem;
   font-size: 2rem;
   letter-spacing: 1px;
   line-height: 1.3;
-
-  margin-bottom: 2rem;
+  text-align: center;
+  padding: 2rem;
   margin-bottom: 1rem;
 }
 
